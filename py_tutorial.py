@@ -22,6 +22,36 @@
 # # 変数は「定義」されていないまま使おうとするとエラーが出る
 # print(n)
 
-# 浮動小数点への変換
-print(3 * 3.75 / 1.5)
-print(7.0 / 2)
+# # 浮動小数点への変換
+# print(3 * 3.75 / 1.5)
+# print(7.0 / 2)
+
+# prefix = 'Py'
+# print(prefix 'than')
+# print(('un' * 3 'ium'))
+
+# prefix = 'Py'
+# print(prefix + 'thon')
+
+# word = 'Python'
+# print(word[0])
+# print(word[5])
+# print(word[-1])
+# print(word[-2])
+# print(word[-6])
+# print(word[0:2])
+# print(word[2:5])
+# print(word[:2] + word[2:])
+# print(word[:4] + word[4:])
+# print(word[:2])
+# print(word[4:])
+# print(word[-2:])
+# print(word[42])
+# print(word[4:42])
+# print(word[42:])
+# word[0] = 'j'
+# word[2:] = 'py'
+# print('j' + word[1:])
+# print(word[:2] + 'py')
+s = 'supercalifragilisticexpialidocious'
+print(len(s))
