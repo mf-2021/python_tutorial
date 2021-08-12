@@ -48,8 +48,13 @@
 #     else:
 #         print(n, 'is a prime number')
 
-for num in range(2, 10):
-    if num % 2 == 0:
-        print("Found an even number", num)
-        continue
-    print("Found a number", num)
+# for num in range(2, 10):
+#     if num % 2 == 0:
+#         print("Found an even number", num)
+#         continue
+#     print("Found a number", num)
+
+
+# 4.5 pass文
+while True:
+    pass
