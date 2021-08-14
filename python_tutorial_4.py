@@ -56,5 +56,16 @@
 
 
 # 4.5 pass文
-while True:
-    pass
+# while True:
+#     pass
+
+
+# ４.6 関数の定義
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a + b
+    print()
+
+fib(2000)
