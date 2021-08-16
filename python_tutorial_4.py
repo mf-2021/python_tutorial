@@ -68,4 +68,4 @@ def fib(n):
         a, b = b, a + b
     print()
 
-fib(3000)
+fib(4000)
