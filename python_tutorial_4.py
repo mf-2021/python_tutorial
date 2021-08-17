@@ -208,7 +208,7 @@ def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
 
 
 # 4.7.6　ドキュメンテーション文字列（docstring）
-def my_function():
+# def my_function():
     """Do nothing, but document it.
 
     No, really, it doesn\'t do anything.
@@ -216,4 +216,13 @@ def my_function():
 
     pass
 
-print(my_function.__doc__)
+# print(my_function.__doc__)
+
+
+# 4.7.7 関数注釈（関数アノテーション）
+def f(ham: str, eggs: str = 'eggs') -> str:
+    print("Annotations:", f.__annotations__)
+    print("Arguments:", ham, eggs)
+    return ham + ' and ' + eggs
+
+f('spam')
