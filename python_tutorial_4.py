@@ -185,10 +185,23 @@ def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
 # args = [3, 6]
 # print(list(range(*args)))
 
-def parrot(voltage, state='a stiff', action='voom'):
-    print("-- This parrot wouldn\'t", action, end=' ')
-    print("if you put", voltage, "volts through it.", end=' ')
-    print("E\'s", state, "!")
+# def parrot(voltage, state='a stiff', action='voom'):
+#     print("-- This parrot wouldn\'t", action, end=' ')
+#     print("if you put", voltage, "volts through it.", end=' ')
+#     print("E\'s", state, "!")
 
-d = {"voltage": "four million", "state": "bleedin\' demised", "action": "VOOM"}
-parrot(*d)
+# d = {"voltage": "four million", "state": "bleedin\' demised", "action": "VOOM"}
+# parrot(*d)
+
+
+# 4.7.5 lambda式
+# def make_incrementor(n):
+#     return lambda x: x + n
+
+# f = make_incrementor(42)
+# print(f(0))
+# print(f(1))
+
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+pairs.sort(key=lambda pair: pair[1])
+print(pairs)
