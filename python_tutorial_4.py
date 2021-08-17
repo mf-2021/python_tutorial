@@ -202,6 +202,18 @@ def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
 # print(f(0))
 # print(f(1))
 
-pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
-pairs.sort(key=lambda pair: pair[1])
-print(pairs)
+# pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+# pairs.sort(key=lambda pair: pair[1])
+# print(pairs)
+
+
+# 4.7.6　ドキュメンテーション文字列（docstring）
+def my_function():
+    """Do nothing, but document it.
+
+    No, really, it doesn\'t do anything.
+    """
+
+    pass
+
+print(my_function.__doc__)
