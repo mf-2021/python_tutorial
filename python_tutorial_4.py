@@ -169,11 +169,26 @@ def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
 
 
 # 4.7.3　任意引数のリスト
-def write_multiple_items(file, separator, *args):
-    file.write(separator.join(args))
+# def write_multiple_items(file, separator, *args):
+#     file.write(separator.join(args))
 
-def concat(*args, sep="/"):
-    return sep.join(args)
+# def concat(*args, sep="/"):
+#     return sep.join(args)
 
-print(concat("earth", "mars", "venus"))
-print(concat("earth", "mars", "venus", sep="."))
+# print(concat("earth", "mars", "venus"))
+# print(concat("earth", "mars", "venus", sep="."))
+
+
+# 引数リストのアンパック
+# print(list(range(3, 6)))
+
+# args = [3, 6]
+# print(list(range(*args)))
+
+def parrot(voltage, state='a stiff', action='voom'):
+    print("-- This parrot wouldn\'t", action, end=' ')
+    print("if you put", voltage, "volts through it.", end=' ')
+    print("E\'s", state, "!")
+
+d = {"voltage": "four million", "state": "bleedin\' demised", "action": "VOOM"}
+parrot(*d)
