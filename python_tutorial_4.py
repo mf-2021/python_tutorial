@@ -151,18 +151,29 @@ def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
 # parrot('a million', 'bereft of life', 'jump')
 # parrot('a thousand', state='pushing up the daises')
 
-def cheeseshop(kind, *arguments, **keywords):
-    print("-- Do you have any", kind, "?")
-    print("-- I\'m sorry, we\'re all out of", kind)
-    # for arg in arguments:
-    #     print(arg)
-    print("-" * 40)
-    keys = sorted(keywords.keys())
-    for kw in keys:
-        print(kw, ":", keywords[kw])
+# def cheeseshop(kind, *arguments, **keywords):
+#     print("-- Do you have any", kind, "?")
+#     print("-- I\'m sorry, we\'re all out of", kind)
+#     # for arg in arguments:
+#     #     print(arg)
+#     print("-" * 40)
+#     keys = sorted(keywords.keys())
+#     for kw in keys:
+#         print(kw, ":", keywords[kw])
 
-cheeseshop("Limburger", "It\'s very runny, sir.",
-           "It\'s really very, VERY runny, sir.",
-           shopkeeper="Michael Palin",
-           client="John Cleese",
-           sketch="Cheese Shop Sketch")
+# cheeseshop("Limburger", "It\'s very runny, sir.",
+#            "It\'s really very, VERY runny, sir.",
+#            shopkeeper="Michael Palin",
+#            client="John Cleese",
+#            sketch="Cheese Shop Sketch")
+
+
+# 4.7.3　任意引数のリスト
+def write_multiple_items(file, separator, *args):
+    file.write(separator.join(args))
+
+def concat(*args, sep="/"):
+    return sep.join(args)
+
+print(concat("earth", "mars", "venus"))
+print(concat("earth", "mars", "venus", sep="."))
