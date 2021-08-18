@@ -23,15 +23,27 @@
 
 
 # 5.1.1 リストをスタックとして使う
-stack = [3, 4, 5]
-stack.append(6)
-stack.append(7)
-print(stack)
+# stack = [3, 4, 5]
+# stack.append(6)
+# stack.append(7)
+# print(stack)
 
-print(stack.pop())
-print(stack)
+# print(stack.pop())
+# print(stack)
 
-print(stack.pop())
+# print(stack.pop())
 
-print(stack.pop())
-print(stack)
+# print(stack.pop())
+# print(stack)
+
+
+
+# 5.1.2 リストをキューとして使う
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")
+print(queue)
+queue.append("Graham")
+print(queue.popleft())
+print(queue.popleft())
+print(queue)
