@@ -98,11 +98,11 @@
 
 
 # 5.1.4 入れ子のリスト内包
-matrix = [
-    [1, 2, 3, 4], 
-    [5, 6, 7, 8], 
-    [9, 10, 11, 12]
-]
+# matrix = [
+#     [1, 2, 3, 4], 
+#     [5, 6, 7, 8], 
+#     [9, 10, 11, 12]
+# ]
 
 # print([[row[i] for row in matrix] for i in range(4)])
 
@@ -122,4 +122,20 @@ matrix = [
 
 # print(transposed)
 
-print(list(zip(*matrix)))
+# print(list(zip(*matrix)))
+
+
+
+# del文
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+del a[0]
+print(a)
+
+del a[2:4]
+print(a)
+
+del a[:]
+print(a)
+
+del a
+print(a)
