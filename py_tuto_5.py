@@ -155,10 +155,33 @@
 # v = ([1, 2, 3], [3, 2, 1])
 # print(v)
 
-empty = ()
-singleton = 'hello',
-print(len(empty))
+# empty = ()
+# singleton = 'hello',
+# print(len(empty))
 
-print(len(singleton))
+# print(len(singleton))
 
-print(singleton)
+# print(singleton)
+
+
+
+# 集合（set）
+# basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+# print(basket)
+
+# print('orange' in basket)
+
+# print('crabgrass' in basket)
+
+
+# a = set('abracadabra')
+# b = set('alacazam')
+# print(a)
+
+# print(a - b)
+# print(a | b)
+# print(a & b)
+# print(a ^ b)
+
+a = {x for x in 'abracadabra' if x not in 'abc'}
+print(a)
