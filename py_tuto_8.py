@@ -45,12 +45,24 @@
 
 
 
-def this_fails():
-    x = 1 / 0
+# def this_fails():
+#     x = 1 / 0
+
+# try:
+#     this_fails
+# except ZeroDivisionError as err:
+#     print('ランタイムエラーを処理します：', err)
+
+# print(this_fails())
+
+
+
+# raise NameError('Hi There')
+
+
 
 try:
-    this_fails
-except ZeroDivisionError as err:
-    print('ランタイムエラーを処理します：', err)
-
-print(this_fails())
+    raise NameError('HiThere')
+except NameError:
+    print('例外が飛んでった！')
+    raise
