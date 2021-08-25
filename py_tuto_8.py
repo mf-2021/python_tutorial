@@ -82,33 +82,36 @@
 
 
 
-class Error(Exception):
-    """このモジュールの例外のベースクラス"""
-    pass
+# class Error(Exception):
+#     """このモジュールの例外のベースクラス"""
+#     pass
 
-class InputError(Error):
-    """入力エラーで送出される例外
+# class InputError(Error):
+#     """入力エラーで送出される例外
     
-    属性：
-        expression -- エラーが起きた入力式
-        message -- エラーの説明
-    """
+#     属性：
+#         expression -- エラーが起きた入力式
+#         message -- エラーの説明
+#     """
 
-    def __init__(self, expression, message):
-        self.expression = expression
-        self.message = message
+#     def __init__(self, expression, message):
+#         self.expression = expression
+#         self.message = message
 
-class TransitionError(Error):
-    """許可されない状態繊維を起こそうとする操作があれば送出される
+# class TransitionError(Error):
+#     """許可されない状態繊維を起こそうとする操作があれば送出される
     
-    属性：
-        previous -- 遷移前の状態
-        next -- 移ろうとした状態
-        message -- その遷移がなぜ許可されないかの説明
-    """
+#     属性：
+#         previous -- 遷移前の状態
+#         next -- 移ろうとした状態
+#         message -- その遷移がなぜ許可されないかの説明
+#     """
 
-    def __init__(self, previous, next, message):
-        self.previous = previous
-        self.next = next
-        self.message = message
+#     def __init__(self, previous, next, message):
+#         self.previous = previous
+#         self.next = next
+#         self.message = message
+
+
+
 
