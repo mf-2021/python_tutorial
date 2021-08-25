@@ -76,10 +76,14 @@
 # s = str(value)
 # f.write(s)
 
-f = open('test.txt', 'rb+')
-f.write(b'0123456789abcdef')
+# f = open('test.txt', 'rb+')
+# f.write(b'0123456789abcdef')
 
-print(f.seek(5))
-print(f.read(1))
-print(f.seek(-3, 2))
-f.read(1)
+# print(f.seek(5))
+# print(f.read(1))
+# print(f.seek(-3, 2))
+# f.read(1)
+
+
+x = [1, 'simple', 'list']
+json.dumps(x)
