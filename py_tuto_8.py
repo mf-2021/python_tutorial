@@ -114,4 +114,9 @@
 
 
 
+# for line in open("test.txt"):
+#     print(line, end=" ")
 
+with open("test.txt") as f:
+    for line in f:
+        print(line, end=" ")
