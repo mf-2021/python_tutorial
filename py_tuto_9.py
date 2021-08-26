@@ -114,22 +114,40 @@
 
 
 
-def f1(self, x, y):
-    return min(x, x+y)
+# def f1(self, x, y):
+#     return min(x, x+y)
 
-class C:
-    f = f1
-    def g(self):
-        return 'hello world'
-    h = g
+# class C:
+#     f = f1
+#     def g(self):
+#         return 'hello world'
+#     h = g
 
 
 
-class Bag:
-    def __init__(self):
-        self.data = []
-    def add(self, x):
-        self.data.append(x)
-    def addtwice(self, x):
-        self.add(x)
-        self.add(x)
+# class Bag:
+#     def __init__(self):
+#         self.data = []
+#     def add(self, x):
+#         self.data.append(x)
+#     def addtwice(self, x):
+#         self.add(x)
+#         self.add(x)
+
+
+
+class base():
+    def a(self):
+        print('私の名前はbase.aです。base.bをコールします。')
+        self.b()
+    def b(self):
+        print('私の名前はbase.bです。der.bでオーバーライドされます')
+
+class der(base):
+    def b(self):
+        print('ウヒョ！オイラはder.bだよ。')
+
+b = base()
+d = der()
+print(b.a())
+print(d.a())
