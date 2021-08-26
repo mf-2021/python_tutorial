@@ -154,19 +154,30 @@
 
 
 
-class Mapping:
-    def __init__(self, iterable):
-        self.items_list = []
-        self.__update(iterable)
+# class Mapping:
+#     def __init__(self, iterable):
+#         self.items_list = []
+#         self.__update(iterable)
 
-    def update(self, iterable):
-        for item in iterable:
-            self.items_list.append(item)
+#     def update(self, iterable):
+#         for item in iterable:
+#             self.items_list.append(item)
 
-    __update = update
+#     __update = update
 
-class MappingSubclass(Mapping):
+# class MappingSubclass(Mapping):
 
-    def update(self, keys, values):
-        for item in zip(keys, values):
-            self.items_list.append(item)
+#     def update(self, keys, values):
+#         for item in zip(keys, values):
+#             self.items_list.append(item)
+
+
+
+class Employee:
+    pass
+
+john = Employee()
+
+john.name = 'John Doe'
+john.dept = 'computer lab'
+john.salary = 1000
