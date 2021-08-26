@@ -93,21 +93,43 @@
 # print(d.tricks)
 
 
-class Dog:
+# class Dog:
 
-    def __init__(self, name):
-        self.name = name
-        self.tricks = []
+#     def __init__(self, name):
+#         self.name = name
+#         self.tricks = []
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
 
-# インスタンス化
-d = Dog('Fibo')
-e = Dog('Buddy')
+# # インスタンス化
+# d = Dog('Fibo')
+# e = Dog('Buddy')
 
-d.add_trick('ころがる')
-e.add_trick('死んだふり')
+# d.add_trick('ころがる')
+# e.add_trick('死んだふり')
 
-print(d.tricks)
-print(e.tricks)
+# print(d.tricks)
+# print(e.tricks)
+
+
+
+def f1(self, x, y):
+    return min(x, x+y)
+
+class C:
+    f = f1
+    def g(self):
+        return 'hello world'
+    h = g
+
+
+
+class Bag:
+    def __init__(self):
+        self.data = []
+    def add(self, x):
+        self.data.append(x)
+    def addtwice(self, x):
+        self.add(x)
+        self.add(x)
