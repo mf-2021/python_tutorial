@@ -29,7 +29,10 @@
 #     def __init__(self):
 #         self.data = []
 
-#     x = MyClass()
+# x = MyClass()
+# print(x.i)
+
+
 
 #     x.counter = 1
 #     while x.counter < 10:
@@ -46,3 +49,65 @@
 # x = Complex(3.0, -4.5)
 # print(x.r, x.i)
 
+
+# xf = x.f
+# while True:
+#     print(xf())
+
+
+
+# class Dog:
+    
+#     kind = 'canine'
+
+#     def __init__(self, name):
+#         self.name = name
+
+# # インスタンス作成
+# d = Dog('Fibo')
+# e = Dog('Buddy')
+
+# print(d.kind)
+# print(e.kind)
+# print(d.name)
+# print(e.name)
+
+
+
+# class Dog:
+
+#     tricks = []
+
+#     def __init__(self, name):
+#         self.name = name
+
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
+
+# # インスタンス化
+# d = Dog('Fibo')
+# e = Dog('Buddy')
+
+# print(d.add_trick('ころがる'))
+# print(e.add_trick('死んだふり'))
+# print(d.tricks)
+
+
+class Dog:
+
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+# インスタンス化
+d = Dog('Fibo')
+e = Dog('Buddy')
+
+d.add_trick('ころがる')
+e.add_trick('死んだふり')
+
+print(d.tricks)
+print(e.tricks)
