@@ -85,7 +85,10 @@
 # f.read(1)
 
 
-x = [1, 'simple', 'list']
-json.dumps(x)
+# x = [1, 'simple', 'list']
+# json.dumps(x)
 
-# 8/31
+# # 8/31
+
+# 9/4
+
